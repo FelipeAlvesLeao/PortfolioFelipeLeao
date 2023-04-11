@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,100;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  html,body{
+    overflow-x: hidden;
+}
+
+}
+:root {
+  --turquoise: rgba(5, 138, 140);
+  --primary:#202020 ;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--turquoise) var(--turquoise);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--turquoise);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 3px;
+  border: 3px solid var(--turquoise);
+}
+
+  .icon {
+    height: 60px;
+    width: 60px;
+    display: block;
+  }
+
+  .icon2 {
+    height: 40px;
+    width: 40px;
+    display: block;
+
+  }
+
+  .custom-shape-divider-top-1680915384 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1680915384 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 135px;
+}
+
+.custom-shape-divider-top-1680915384 .shape-fill {
+    fill: #FAF9F6;
+}
+.custom-shape-divider-top-1680919359 .shape-fill {
+  fill: #202020;
+}
+
